@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('Fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: linear-gradient(to right, rgb(85, 5, 36), rgb(211, 148, 185));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: inherit;
+    filter: blur(3.5px);
+    z-index: -1;
+    transform: scale(1.1);
+}
+
+#weather-container {
+    position: relative;
+    background: whitesmoke;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+#search-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#city-input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 10px;
+    border: none;
+    background-color: rgb(72, 174, 238);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#unit-select {
+    padding: 10px 6px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+}

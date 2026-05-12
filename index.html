@@ -6,14 +6,25 @@
     <title>Mjergull Weather</title>
     <meta name="description" content="Mjergull - A Weather App.">
     <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mjergull.css">
 </head>
 <body>
     <div id="weather-container">
-        <h1>Mjergull Weather</h1>
-        <input type="text" id="city-input" placeholder="Enter City Name">
-        <button id="search-button">Search</button>
+        <h1>Mjergull</h1>
+        <div id="search-row">
+            <input type="text" id="city-input" placeholder="Enter City Name">
+            <button id="search-button">Search</button>
+            <select id="unit-select">
+                <option value="fahrenheit">°F</option>
+                <option value="celsius">°C</option>
+            </select>
+        </div>
         <h2 id="city"></h2>
+        <img id="weather-image" width="100px" height="100px">
+        <p><b>Temperature:</b> <span id="temperature"></span></p> 
+        <p><b>Condition:</b> <span id="weather-condition"></span></p>
+        <p><b>Wind Speed:</b> <span id="wind-speed"></span></p>
+
     </div>
     <script src="mjergull.js"></script>
 </body>
