@@ -1,2 +1,2 @@
-# Mjegull
+# Mjergull
 A Simple Weather App.
