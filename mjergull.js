@@ -55,7 +55,6 @@ async function getWeather() {
     const unsplashUrl = `https://mjergull-unsplash.rubyxf.workers.dev/?city=${name}`;
     const unsplashResponse = await fetch(unsplashUrl);
     const unsplashData = await unsplashResponse.json();
-    const photoUrl = unsplashData.results[0].urls.regular;
 
     //API FOR WEATHER
     const unit = document.getElementById("unit-select").value;
