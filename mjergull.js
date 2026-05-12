@@ -52,7 +52,7 @@ async function getWeather() {
     const country = geoData.results[0].country;
 
     //API FOR UNSPLASH PHOTO BACKGROUNDS
-    const unsplashUrl = `https://api.unsplash.com/search/photos?query=${city}&client_id=fjX9qvjwLZ1CjNtXF20hc7Q0LWs6QlbaQ2fvKUWMrlo&per_page=1`;
+    const unsplashUrl = `https://mjergull-unsplash.rubyxf.workers.dev/?city=${name}`;
     const unsplashResponse = await fetch(unsplashUrl);
     const unsplashData = await unsplashResponse.json();
     const photoUrl = unsplashData.results[0].urls.regular;
